@@ -2,7 +2,26 @@ div {
     width: 100px;
     height: 100px;
     background-color: black;
+
+    animation: loopAround 3s linear infinite;
 }
 
 /* Your code goes here: */
 
+@keyframes loopAround {
+    0% {
+        transform: translateX(400px);
+    }
+    25% {
+        transform: translateX(800px);
+    }
+    50% {
+        transform: translateY(400px) translateX(800px);
+    }
+    75% {
+        transform: translateX(400px) translateY(400px);
+    }
+    100% {
+        transform: translateX(400px);
+    }
+}

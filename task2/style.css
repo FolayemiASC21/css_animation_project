@@ -1,5 +1,45 @@
 img {
     width: 150px;
+    transform: translateY(-400px) translateX( calc((100vw - 455px) /2 ) );
+
+    animation: aMovinAMario 3s linear 6s infinite;
 }
 
 /* Your code here */
+
+body {
+    animation: backgroundChanger 6s;
+}
+
+@keyframes backgroundChanger {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes aMovinAMario {
+    0% {
+        transform: translateY(-300px) translateX( calc((100vw - 455px) /2 ) );
+    }
+    20% {
+        transform: translateY(-100px) translateX( calc((100vw - 55px) /2 ) );
+    }
+    40% {
+        transform: translateY(100px) translateX( calc((100vw - 855px) /2 ) );
+    }
+    60% {
+        transform: translateY(300px) translateX( calc((100vw - 55px) /2 ) );
+    }
+    80% {
+        transform: translateY(500px) translateX( calc((100vw - 855px) /2 ) );
+    }
+    100% {
+        transform: translateY(700px) translateX( calc((100vw - 55px) /2 ) );
+    }
+}

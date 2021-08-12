@@ -2,9 +2,18 @@ img {
     width: 300px
 }
 
-#race {
+button {
     font-size: 30px;
 }
 
 
 /* Your code goes here: */
+
+@keyframes racerSpeed {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(1900px);
+    }
+}
